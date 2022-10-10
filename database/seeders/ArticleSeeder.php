@@ -2,11 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class UserSeeder extends Seeder
+class ArticleSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,12 +15,5 @@ class UserSeeder extends Seeder
     public function run()
     {
         //
-        $dev = User::factory()->create(
-            [
-                'name'  =>  'dev',
-                'email' =>  'dev@dev'
-            ]
-        );
-        $dev->assignRole('dev');
     }
 }
